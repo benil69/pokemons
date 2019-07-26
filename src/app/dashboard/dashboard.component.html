@@ -1,0 +1,14 @@
+<h3>Top Pokemons</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let pokemon of pokemons" class="col-1-4"
+      routerLink="/detail/{{pokemon.name}}">
+    <div class="module hero">
+      <h4>{{pokemon.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<button (click)="previousPokemons()">Previous</button>
+<button (click)="nextPokemons()">Next</button>
+
+<app-hero-search></app-hero-search>

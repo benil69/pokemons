@@ -1,0 +1,12 @@
+<h2>My Pokemons</h2>
+<ul class="heroes">
+  <li *ngFor="let pokemon of pokemons">
+    <a routerLink="/detail/{{pokemon.name}}">
+      <span class="badge">DETAILS</span> {{pokemon.name}}
+    </a>
+  </li>
+</ul>
+
+<button (click)="previousPokemons()">Previous</button>
+<button (click)="getHeroes()">Confirm</button>
+<button (click)="nextPokemons()">Next</button>

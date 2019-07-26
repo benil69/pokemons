@@ -1,0 +1,11 @@
+<div id="search-component">
+    <h4><label for="search-box">Pokemon Search</label></h4>
+      
+      <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+      
+      <ul class="search-result">
+          <a routerLink="/detail/{{pokemonName}}">
+             {{pokemonName}}
+          </a>
+      </ul>
+</div>
